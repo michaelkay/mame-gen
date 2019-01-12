@@ -11,8 +11,6 @@ install -m 644 files/console-setup   	"${ROOTFS_DIR}/etc/default/"
 
 install -m 755 files/rc.local		"${ROOTFS_DIR}/etc/"
 
-install -m 644 files/startup-script.service "${ROOTFS_DIR}/etc/systemd/system/startup-script.service"
-
 on_chroot << EOF
 systemctl disable hwclock.sh
 systemctl disable nfs-common
@@ -53,10 +51,6 @@ EOF
 
 on_chroot << EOF
 usermod --pass='*' root
-EOF
-
-on_chroot << EOF
-systemctl enable startup-script.service
 EOF
 
 rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
