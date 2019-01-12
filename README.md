@@ -2,7 +2,9 @@
 
 _Tool used to create the raspberrypi.org Raspbian images_
 
-
+This version adds the ability to include a script that runs on firstboot to configure the system.
+It makes auto configuration of the Raspberry Pi possible.
+ 
 ## Dependencies
 
 pi-gen runs on Debian based operating systems. Currently it is only supported on
