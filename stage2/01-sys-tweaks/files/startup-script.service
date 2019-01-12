@@ -1,0 +1,16 @@
+[Unit]
+Description=Run a configuration script on first boot
+ConditionPathExists=/boot/firstrun.sh
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/boot/firstrun.sh
+ExecStartPost=/bin/rm /boot/firstrun.sh
+ExecStartPost=/sbin/reboot
+
+[Install]
+WantedBy=multi-user.target
+
