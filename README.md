@@ -3,6 +3,9 @@
 Based on Pi-gen, this will create an image that will optimize and run the latest mame build.
 Based on https://github.com/michaelkay/pi-gen and https://gist.github.com/sonicprod/f5a7bb10fb9ed1cc5124766831e120c4
 
+**NOTE** This was built using the Raspberry PI OS script but it has been modified and some original functionality 
+is now missing. For example, you cannot build a GUI OS. It build stops at stage 2 - the Lite system.
+
 ## Dependencies
 
 pi-gen runs on Debian-based operating systems. Currently it is only supported on
