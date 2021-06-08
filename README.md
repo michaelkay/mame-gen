@@ -1,10 +1,8 @@
-# pi-gen
+# mame-gen (WORK IN PROGRESS)
 
-Tool used to create Raspberry Pi OS images. (Previously known as Raspbian).
+Based on Pi-gen, this will create an image that will optimize and run the latest mame build.
+Based on https://github.com/michaelkay/pi-gen and https://gist.github.com/sonicprod/f5a7bb10fb9ed1cc5124766831e120c4
 
-This version adds the ability to include a script that runs on firstboot to configure the system.
-It makes auto configuration of the Raspberry Pi possible.
- 
 ## Dependencies
 
 pi-gen runs on Debian-based operating systems. Currently it is only supported on
